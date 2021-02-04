@@ -1,8 +1,8 @@
 //Write a program to add two user input numbers using 4 functions.
 #include<stdio.h>
-Int main()
+int main()
 {
-Float h,b,d,vol;
+float h,b,d,vol;
 printf(“Enter height,breadth,depth :”);
 scanf(“%f%f%f”,&h,&b,&d);
 vol=((h*d)+d)/(3*b);
