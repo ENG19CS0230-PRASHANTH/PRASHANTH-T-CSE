@@ -1,19 +1,36 @@
 //Write a program to find the volume of a tromboloid using one function
-   #include<stdio.h>
-float addition (float num1 , float num2)
+#include<stdio.h>
+
+int first_num()
 {
-  float sum;
-  sum = num1 + num2;
- return sum;
+int num;
+printf("Enter first number ");
+scanf("%d",&num);
+return num;
 }
- int main()
+
+int second_num()
 {
-float number1,number2,total;
-printf(“Enter the two numbers :”);
-scanf(“%f%f”, number1 , number);
-total= addition(number 1, number 2);
-printf(“%.2f+%.2f\n”,number 1,number 2,total);
+int num;
+printf("enter second number ");
+scanf("%d",&num);
+return num;
+}
+
+int add_two_num(int first_num,int second_num)
+{ 
+return (first_num+second_num);
+}
+int print(int sum)
+{
+ printf("sum of the 2 numbers is = %d\n",sum);
+}
+
+int main()
+{
+int a=first_num();
+int b=second_num();
+int sum=add_two_num(a,b);
+print(sum);
 return 0;
-
-
 }
