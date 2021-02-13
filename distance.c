@@ -3,23 +3,48 @@
 #include<math.h>
 int main()
 {
-   int x1, y1, x2, y2, x, y, distance;
+float x2,x1,y2,y1,d;
+float point1x();
+float point1y();
+float point2x();
+float point2y();
 
-   
-   printf("Enter coordinates of first point: ");
-   scanf("%d %d",&x1, &y1);
+x1=point1x();
+y1=point1y();
 
-   
-   printf("Enter coordinates of second point: ");
-   scanf("%d %d",&x2, &y2);
+x2=point2x();
+y2=point2y();
+d=sqrt(((x2-x1)(x2-x1))+((y2-y1)(y2-y1)));
+printf("Distance between the points =%f",d);
+return 0;
+}
 
-   x = (x2-x1);
-   y = (y2-y1);
+float point1x()
+{
+float a;
+printf("Enter the x coordinate of point one");
+scanf("%f",&a);
+return a;
+}
+float point1y()
+{
+float a;
+printf("Enter the y coordinate of point one");
+scanf("%f",&a);
+return a;
+}
 
-   distance = sqrt(x*x + y*y);
-
-   
-   printf("Distance = %d", distance);
-
-   return 0;
+float point2x()
+{
+float a;
+printf("Enter the x coordinate of point two");
+scanf("%f",&a);
+return a;
+}
+float point2y()
+{
+float a;
+printf("Enter the y coordinate of point two");
+scanf("%f",&a);
+return a;
 }
